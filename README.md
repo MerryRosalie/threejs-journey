@@ -8,6 +8,7 @@ List of small projects I did to learn WebGL and ThreeJS because 3D is very pog :
 
 - Basic Scene [(link)](/basic-scene/)
 - Transform Object [(link)](/transform-object/)
+- Animations [(link)](/animations/)
 
 ## Authors
 

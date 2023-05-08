@@ -18,7 +18,7 @@ A project consisting of different animations that utilizes [requestAnimationFram
 
 ![Cube zooms](./src/zoom/zoom.gif)
 
-## Timeline
+### Timeline
 
 ![Animation with timeline](./src/timeline/timeline.gif)
 

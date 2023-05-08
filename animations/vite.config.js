@@ -1,3 +1,4 @@
+import { defineConfig } from "vite";
 import { resolve } from "path";
 
 const isCodeSandbox =
@@ -18,8 +19,10 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        transform: resolve(__dirname, "transform/index.html"),
-        group: resolve(__dirname, "group/index.html"),
+        rotate: resolve(__dirname, "/rotate/index.html"),
+        bounce: resolve(__dirname, "/bounce/index.html"),
+        zoom: resolve(__dirname, "/zoom/index.html"),
+        delay: resolve(__dirname, "/delay/index.html"),
       },
     },
   },

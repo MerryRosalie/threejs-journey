@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import gsap from "gsap";
 
 // Scene
 const scene = new THREE.Scene();
@@ -15,8 +14,17 @@ const sizes = {
   width: 800,
   height: 600,
 };
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 3;
+const aspectRatio = sizes.width / sizes.height;
+const camera = new THREE.OrthographicCamera(
+  -aspectRatio,
+  aspectRatio,
+  1,
+  -1,
+  0.1,
+  100
+);
+camera.position.set(2, 2, 2);
+camera.lookAt(mesh.position);
 scene.add(camera);
 
 // Renderer
@@ -25,15 +33,4 @@ const renderer = new THREE.WebGLRenderer({
   canvas,
 });
 renderer.setSize(sizes.width, sizes.height);
-
-// animate cube with position x
-gsap.to(mesh.position, { x: 1, duration: 1, delay: 0 });
-gsap.to(mesh.position, { x: -1, duration: 1, delay: 1 });
-gsap.to(mesh.position, { x: 0, duration: 1, delay: 2 });
-
-const timeline = () => {
-  renderer.render(scene, camera);
-  window.requestAnimationFrame(timeline);
-};
-
-timeline();
+renderer.render(scene, camera);

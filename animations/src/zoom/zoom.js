@@ -27,7 +27,7 @@ renderer.setSize(sizes.width, sizes.height);
 
 const clock = new THREE.Clock();
 
-// Rotate that adapts to different frame rate
+// cube zooooms
 const zoom = () => {
   const elapsedTime = clock.getElapsedTime();
 

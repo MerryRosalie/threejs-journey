@@ -1,11 +1,13 @@
 import { resolve } from "path";
+import { defineConfig } from "vite";
 
 const isCodeSandbox =
   "SANDBOX_URL" in process.env || "CODESANDBOX_HOST" in process.env;
 
-export default {
+/** @type {import('vite').UserConfig} */
+export default defineConfig({
   root: "src/",
-  publicDir: "static/",
+  publicDir: "assets/",
   base: "./",
   server: {
     host: true,
@@ -43,4 +45,4 @@ export default {
       },
     },
   },
-};
+});

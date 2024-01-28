@@ -6,7 +6,7 @@ List of small projects I did to learn WebGL and ThreeJS because 3D is very pog :
 
 ## Link
 
-[Link to website](#)
+[Link to website](https://threejs-journey-teal.vercel.app/)
 
 ## List of projects
 

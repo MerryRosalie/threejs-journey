@@ -42,6 +42,8 @@ export default defineConfig({
         textures: resolve(__dirname, "src/textures/index.html"),
         minecraft: resolve(__dirname, "src/textures/minecraft/index.html"),
         materials: resolve(__dirname, "src/textures/materials/index.html"),
+        text: resolve(__dirname, "src/text/index.html"),
+        "3d": resolve(__dirname, "src/text/3d/index.html"),
       },
     },
   },
